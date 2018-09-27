@@ -9,15 +9,12 @@
 import UIKit
 
 class TableViewControllerInAlertView:UITableViewController{
-    var cells:[String] = []
+    var cells:[Int] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         var size:CGSize?
-        
-        
-        
-        
+        cells = [1,2,3,4,5,6,7,8,9,10,11,12]
         
         if (cells.count < 4) {
             size = CGSize(width: 272, height: 100)
@@ -41,11 +38,10 @@ class TableViewControllerInAlertView:UITableViewController{
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:AlertViewTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AlertViewTableViewCell
-        cell.label.text = "\(indexPath.row)"
+        cell.label.text = "item\(cells[indexPath.row])"
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         self.dismiss(animated: true, completion: nil)
     }
 }
