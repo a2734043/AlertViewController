@@ -5,7 +5,7 @@
 
 首先先新增一個TableViewController，TableViewCell並利用xib自訂cell的樣式。
 
-##TableViewController
+## TableViewController
 ```
 import UIKit
 
@@ -51,7 +51,7 @@ class TableViewControllerInAlertView:UITableViewController{
 最後就是覆寫tableivewDelegate跟tableviewDatasource了！
 
 設定完tableviewcontroller之後，接著就是viewcontroller了！
-##ViewController.swift
+## ViewController.swift
 先在viewdidload中新增一個按鈕再點選之後跳出alertView。
 
 ```
@@ -66,7 +66,7 @@ override func viewDidLoad() {
     }  
 ```
 
-###showAlertAction
+### showAlertAction
 接下來在btn的action中建立alertvie並設定
 
 
