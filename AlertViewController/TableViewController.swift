@@ -14,8 +14,7 @@ class TableViewControllerInAlertView:UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         var size:CGSize?
-        cells = [1,2,3,4,5,6,7,8,9,10,11,12]
-        
+        cells = [1,2,3,4,5,6,7,8,9,10,11,12,13]
         if (cells.count < 4) {
             size = CGSize(width: 272, height: 100)
         }else if (cells.count < 6){

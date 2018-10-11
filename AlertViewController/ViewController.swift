@@ -16,10 +16,8 @@ class ViewController: UIViewController {
         btn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         btn.setTitle("Show Alert", for: .normal)
         btn.setTitleColor(UIColor.blue, for: .normal)
-        
         btn.addTarget(self, action: #selector(showAlertAction), for: .touchUpInside)
         self.view.addSubview(btn)
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @objc func showAlertAction(){
